@@ -53,5 +53,4 @@ def train_split(data):
     return train_data, validation_data, test_data
 
 
-# load train.csv and split into training, validation and test 
-# train_data, validation_data, test_data = process_data.train_split(process_data.retrieve_training())
+
