@@ -1,15 +1,44 @@
 Notes starting from chapter 3 of neuralnetworksanddeeplearning.com
 
-topics to review
-backpropogation
-cross entropy cost function
-L1, L2, dropout, artifical expansion
-methods for initializing the weights in the network
-heuristics to help choose good hyperparameters for the network
+topics to review:
+1) backpropogation
+2) cross entropy cost function
+3) L1, L2, dropout, artifical expansion
+4) methods for initializing the weights in the network
+5) heuristics to help choose good hyperparameters for the network
+
+
+### Cross entropy cost function
+
+under quadratic loss function, neuron has difficulty learning when initial loss is very large
+
+the cross-entropy is positive, and tends toward zero as the neuron gets better at computing the desired output, y, for all training inputs, x.
+kraft inequality 
+
+
+### softmax layers of neurons
+
+a new type of output layer
+addressing learning slowdown problem
+interpretation as a probability dist, unlike sigmoid
+
+### log likelihood cost function
+softmax output with log-likelihood cost similar to sigmoid output with cross-entropy cost
+softmax/log-likelihood --> intrepretation of output activiation as probailities 
+
+### overfitting and regularization
 
 
 
-========================
+
+
+
+
+
+
+
+###=======================
+###========================
 from eda.ipynb
 
 Build the model
