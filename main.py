@@ -3,15 +3,11 @@ import tensorflow as tf
 from src.utils.config import process_config
 from src.utils.utils import get_args
 
-def main():
-    # capture the config path from the run arguments
-    # then process the json configuration file
-    
-    args = get_args()
-    print(args)
+def run_BCT():
+    #? Build, Compile, Train
+    # TODO extract and pass along hyperparameter values 
 
-#    config = process_config(args.config)
-#    print(config)
+    return 
 
 
 if __name__ == "__main__":
