@@ -12,19 +12,3 @@ setting_0 = {
   }
 
 
-def get_args():
-    argparser = argparse.ArgumentParser(description=__doc__)
-    argparser.add_argument(
-        '-c', '--config',
-        metavar='C',
-        default='None',
-        help='The Configuration file')
-    args = argparser.parse_args()
-    return args
-
-
-if __name__ == "__main__":
-
-    x = get_args()
-    print(x)
-

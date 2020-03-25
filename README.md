@@ -16,17 +16,26 @@ Experiments carried out in jupyter notebooks, employing modules under src
 
 #### Preprocessing of Training Data
 
-**resources**
 
 #### Simple NN Employing Standard Transfer Learning 
-
-**resources**
 [Google TF Basic Transfer Learning Example](https://www.tensorflow.org/tutorials/keras/text_classification_with_hub)
 
 
 #### Hyperparameter Tuning
 
-**resources**
+#### saving/serializing and loading models
+https://www.tensorflow.org/guide/keras/save_and_serialize
+When restoring a model from weights-only you always have to have a model that has the exact structure as the original model. Once you have the same model architecture, you can share weights despite that it is a different instance of a model.
+
+
+#### ===================================================
+**To Do:**
+update git
+1) load saved model
+2) plot training metrics from checkpoints/ evaluation
+3) model evaluation on test data
+4) dropout layer
+#### ======================================================
 
 
 

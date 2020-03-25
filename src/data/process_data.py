@@ -45,7 +45,7 @@ def train_split(data):
     val_features = np.array(val_df).reshape((len(val_df,)))
     test_features = np.array(test_df).reshape((len(test_df,)))
 
-    # load to tf.data --> train
+    # load to tf.data --> train --> tf.data.Dataset
     train_data = tf.data.Dataset.from_tensor_slices((train_features,train_labels))
     validation_data = tf.data.Dataset.from_tensor_slices((val_features, val_labels))
     test_data = tf.data.Dataset.from_tensor_slices((test_features, test_labels))

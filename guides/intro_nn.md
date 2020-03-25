@@ -1,4 +1,4 @@
-Notes starting from chapter 3 of neuralnetworksanddeeplearning.com
+Notes starting from **chapter 3** of neuralnetworksanddeeplearning.com
 
 topics to review:
 1) backpropogation
@@ -9,7 +9,6 @@ topics to review:
 
 
 ### Cross entropy cost function
-
 under quadratic loss function, neuron has difficulty learning when initial loss is very large
 
 the cross-entropy is positive, and tends toward zero as the neuron gets better at computing the desired output, y, for all training inputs, x.
@@ -17,7 +16,6 @@ kraft inequality
 
 
 ### softmax layers of neurons
-
 a new type of output layer
 addressing learning slowdown problem
 interpretation as a probability dist, unlike sigmoid
@@ -27,11 +25,28 @@ softmax output with log-likelihood cost similar to sigmoid output with cross-ent
 softmax/log-likelihood --> intrepretation of output activiation as probailities 
 
 ### overfitting and regularization
+perspective of the cost function or classification accuracy
+**early stopping** strategy
+using validation data to evaluate different trial choices of hyperparameters, such as **num epochs, learing rate, architecture** etc. 
+using validation data to prevent overfitting instead of test data
 
 
+if you set hyper parameters based on evaluation of test_Data, it is possible you will end up with overfitting hyperparameters to test data
+to get confidence that results on test data are a true measure of how well nn generalizes 
+
+**validation data** as a type of training data to learn hyperparameters 
+
+with enough training data, it is difficult for even a very large network to overfit 
 
 
+### Regularization 
+**L2 regularization, weight decay**
+additional term to cost function, the sum of squares of all the weights in the network 
+scaled by a lambda, **Regularization parameter**
+does not include the bias parameters, only weights 
 
+here, the effect is to make the netweork prefer to learn small weights
+large weights will only be allowed if they considerably improve the first part of the cost function 
 
 
 

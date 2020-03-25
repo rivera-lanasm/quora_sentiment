@@ -22,8 +22,8 @@ class ModelCompiler:
     def compile_model(self, model):
 
         model.compile(optimizer= tf.keras.optimizers.Adam(),
-                    loss= tf.keras.losses.BinaryCrossentropy(),
-                    metrics=self.metrics)
+                      loss= tf.keras.losses.BinaryCrossentropy(),
+                      metrics=self.metrics)
 
         return model 
 
