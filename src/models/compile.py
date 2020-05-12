@@ -28,4 +28,8 @@ class ModelCompiler:
         return model 
 
 
+"""
+1) loss function 2) optimizer, 3) metrics
+
+"""
 

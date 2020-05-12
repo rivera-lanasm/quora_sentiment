@@ -20,41 +20,26 @@ class ModelBuilder:
 
     def transfer_simple(self, embedding_layer, num_mid_nodes, model_name):
 
-        # input --> hub layer
+        #? input --> text data
         input_text = tf.keras.Input((), dtype = tf.string, name = 'input_text')
 
+        #? hub layer --> pre-trained embedding
         inputs = hub.KerasLayer(self.embedding_dict[embedding_layer], 
                                    input_shape=[], 
                                    dtype=tf.string, 
                                    trainable=False)(input_text)
 
-        # dense
-        dense = tf.keras.layers.Dense(num_mid_nodes, activation='relu')
-        x = dense(inputs)
-        outputs = tf.keras.layers.Dense(1, activation='sigmoid')(x)
+        #? hidden middle layer
+        dense = tf.keras.layers.Dense(num_mid_nodes, activation='relu')(inputs)
+        #x = dense(inputs)
 
+        #? output layer --> binary classifier
+        outputs = tf.keras.layers.Dense(1, activation='sigmoid')(dense)
+
+        #? model summary
         model = tf.keras.Model(inputs=input_text, outputs=outputs, name=model_name)
 
         return model
-
-if __name__ == "__main__":
-    test_cl = ModelBuilder()
-    model = test_cl.transfer_simple("gnews", 1)
-    print(type(model))
-    print(tf.keras.Input(shape=(784,)))
-
-        # # building full model 
-        # model = tf.keras.Sequential()
-        
-        # #? specify layers
-        # # embedding layer
-        # model.add(hub_layer)
-
-        # # dense layer
-        # model.add(tf.keras.layers.Dense(num_mid_nodes, activation='relu'))
-
-        # # output layer
-        # model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
 
 
 
