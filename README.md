@@ -14,40 +14,50 @@ Results from training and testing different model configurations can be found in
 
 My goal here is simply testing different methods for designing and training models, as well as to familiarize myself with TF framework. 
 
-I deal with the following topics:
-1) 
-
-
+I investigate with the following topics:
+1) Resampling Methods for Minority class classification:
+2) Word Embeddings and Transfer Learning
+3) Text Pre-processing, in the context of using word embeddings
+4) Cost Function
+5) Model Architecture
+6) Model Hyperparameters
+7) Training Specifications
+8) Overfitting Considerations:
 
 ## Project Directory
-├── main.py
-├── README.md
-├── requirements.txt
-├── guides
-|
-├── notebooks
-│   └── Quora_InsincereQuestionDetection.ipynb
-|
-├── data
-│   ├── saved_models
-│   │   └── mriv_model0_exp0.h5
-│   ├── tensorboard_output
-│   └── train_log
-│       └── mriv_model0_exp0
-|
-└── src
-    ├── configs
-    │   └── configs.py
-    ├── data
-    │   └── process_data.py
-    ├── models
-    │   ├── architecture.py
-    │   ├── compile.py
-    │   ├── evaluate.py
-    │   └── train.py
-    └── preprocess
-        ├── resample.py
-        └── text_process.py
+├── main.py<br>
+├── README.md<br>
+├── requirements.txt<br>
+├── guides<br>
+|<br>
+├── notebooks<br>
+│   └── Quora_InsincereQuestionDetection.ipynb<br>
+|<br>
+├── data<br>
+│   ├── saved_models<br>
+│   │   └── mriv_model0_exp0.h5<br>
+│   ├── tensorboard_output<br>
+│   └── train_log<br>
+│       └── mriv_model0_exp0<br>
+|<br>
+└── src<br>
+    ├── configs<br>
+    │   └── configs.py<br>
+    |<br>
+    ├── data<br>
+    │   └── process_data.py<br>
+    |<br>
+    ├── models<br>
+    │   ├── architecture.py<br>
+    │   ├── compile.py<br>
+    │   ├── evaluate.py<br>
+    │   └── train.py<br>
+    |<br>
+    └── preprocess<br>
+    │   ├── resample.py<br>
+    │   └── text_process.py<br>
 
+
+## Project Directory Explained 
 
 
