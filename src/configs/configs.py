@@ -1,5 +1,28 @@
-import argparse
+"""[summary]
+Model Specifications:
 
+### ==========================================
+### ========= setting_0: Basic Model ========= 
+### ==========================================
+This model acts as a control for later, more complex models
+
+Resampling:
+
+Text Pre-processing:
+
+Cost Function:
+
+Model Architecture:
+
+Model Hyperparameters:
+
+Training Specifications:
+
+Overfitting Considerations:
+
+"""
+
+import argparse
 
 setting_0 = {
     "exp_name": "example",

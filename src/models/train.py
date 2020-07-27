@@ -1,17 +1,17 @@
+"""[summary]
+https://www.tensorflow.org/guide/keras/save_and_serialize
+
+ModelTrainer Class:
+
+
+
+
+
+"""
 
 from tensorflow.keras.callbacks import TensorBoard, EarlyStopping
-#from tensorflow.keras import EarlyStopping
 import os
 
-# https://www.tensorflow.org/guide/keras/save_and_serialize
-
-# The model's architecture
-# The model's weight values (which were learned during training)
-# The model's training config (what you passed to compile), if any
-# The optimizer and its state, if any (this enables you to restart training where you left)
-
-
-# train model
 class ModelTrainer:
 
     def __init__(self, model, experiment_name):
@@ -44,13 +44,15 @@ class ModelTrainer:
 
         return
 
-    def save_model(self):
+def save_model(model, experiment_name):
+    """
+    Reset metrics before saving so that loaded model has same state,
+    since metric states are not preserved by Model.save_weights
+    """
 
-        # Reset metrics before saving so that loaded model has same state,
-        # since metric states are not preserved by Model.save_weights
-        self.model.reset_metrics()
-        self.model.save(os.getcwd() + '/data/saved_models/{}.h5'.format(self.experiment_name), save_format='tf')
-        return 
+    self.model.reset_metrics()
+    self.model.save(os.getcwd() + '/data/saved_models/{}.h5'.format(experiment_name), save_format='tf')
+    return None
 
 
 """

@@ -10,33 +10,44 @@ The competition states that submissions will be evaluated upon F1 Score between 
 
 
 ## Project Outline 
-Experiments carried out in jupyter notebooks, employing modules under src 
-My goal here is simply testing different methods for designing and training models for the classification task.
-Also, a good way to familiarize myself with TF framework. 
+Results from training and testing different model configurations can be found in jupyter notebook, /notebooks/Quora_InsincereQuestionDetection.ipynb
 
-## Approach Description and Resources
+My goal here is simply testing different methods for designing and training models, as well as to familiarize myself with TF framework. 
 
-
-## Preprocessing of Training Data
+I deal with the following topics:
+1) 
 
 
-#### Hyperparameter Tuning
 
-
-#### saving/serializing and loading models
-When restoring a model from weights-only you always have to have a model that has the exact structure as the original model. Once you have the same model architecture, you can share weights despite that it is a different instance of a model.
-
-
-#### ===================================================
-**To Do:**
-
-1) load saved model
-2) plot training metrics from checkpoints/ evaluation
-3) model evaluation on test data
-4) dropout layer
-5) hyperparameter tuning; learning rate, mini batch size
-6) training data --> map(augmentation, normalize, shuffle, batch)
-#### ======================================================
+## Project Directory
+├── main.py
+├── README.md
+├── requirements.txt
+├── guides
+|
+├── notebooks
+│   └── Quora_InsincereQuestionDetection.ipynb
+|
+├── data
+│   ├── saved_models
+│   │   └── mriv_model0_exp0.h5
+│   ├── tensorboard_output
+│   └── train_log
+│       └── mriv_model0_exp0
+|
+└── src
+    ├── configs
+    │   └── configs.py
+    ├── data
+    │   └── process_data.py
+    ├── models
+    │   ├── architecture.py
+    │   ├── compile.py
+    │   ├── evaluate.py
+    │   └── train.py
+    └── preprocess
+        ├── resample.py
+        └── text_process.py
 
 
 
