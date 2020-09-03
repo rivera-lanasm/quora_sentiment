@@ -28,8 +28,6 @@ I investigate with the following topics:
 ├── main.py<br>
 ├── README.md<br>
 ├── requirements.txt<br>
-├── guides<br>
-|<br>
 ├── notebooks<br>
 │   └── Quora_InsincereQuestionDetection.ipynb<br>
 |<br>
@@ -38,7 +36,7 @@ I investigate with the following topics:
 │   │   └── mriv_model0_exp0.h5<br>
 │   ├── tensorboard_output<br>
 │   └── train_log<br>
-│       └── mriv_model0_exp0<br>
+│   │   └── mriv_model0_exp0<br>
 |<br>
 └── src<br>
     ├── configs<br>
@@ -59,5 +57,6 @@ I investigate with the following topics:
 
 
 ## Project Directory Explained 
+
 
 

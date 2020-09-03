@@ -6,6 +6,8 @@ Model Specifications:
 ### ==========================================
 This model acts as a control for later, more complex models
 
+Data Preprocessing
+
 Resampling:
 
 Text Pre-processing:
@@ -19,11 +21,6 @@ Model Hyperparameters:
 Training Specifications:
 
 Overfitting Considerations:
-
-
-### ==========================================
-### ========= setting_1:  ========= 
-### ==========================================
 
 """
 
